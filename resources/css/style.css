@@ -1,0 +1,223 @@
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+}
+.container{
+  width: 960px;
+  margin: 0px auto 0px auto;
+  display: flex;
+}
+/* HEADER */
+header{
+  background-color: black;
+}
+header .container{
+  display: flex;
+  align-items: center;
+}
+header img {
+  padding: 0.5rem 0.5rem;
+  height: 1.5rem;
+}
+header span {
+  font-size: 1rem;
+  padding: 0.66px 0.5px;
+}
+/* FEATURE */
+#feature{
+  background-image: URL("../images/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+}
+#feature .container{
+  align-items: flex-start;
+}
+
+.feature_block {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+}
+.feature_block h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.feature_block h2{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+}
+
+/* MENU */
+#menu_bar {
+  background-color: firebrick;
+}
+#menu_bar .container {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_entry {
+  padding: 0.75rem 0rem;
+}
+.menu_sum{
+  display: none;
+}
+
+/* ITEMS */
+
+#content_container .container {
+  justify-content: space-between;
+}
+#item1, #item2, #item3 {
+  margin: 3rem 0rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pic_container{
+  height: 9rem;
+  width: auto;
+  padding: 2rem 0rem;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_pic {
+  height: 9rem;
+  width: auto;
+}
+
+.item_name{
+  padding: 0.5rem 0rem;
+  margin-bottom: 3rem;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* LOCATION */
+#contact .container {
+  justify-content: space-between;
+}
+
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.contact_heading{
+  background-color: black;
+  padding: 1rem 2rem;
+}
+.contact_text {
+  color: black;
+  padding-top: 0.25rem;
+  margin-bottom: 4rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+footer .container {
+  justify-content: flex-start;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 960px){
+  .container {
+    width: 100%;
+    max-width: 900px;
+    min-width: 600px;
+  }
+  #item3{
+    display: none;
+  }
+  #item1, #item2 {
+    width: 47%;
+  }
+  .menu_sum {
+    display: block;
+    padding: 0.75rem 0rem;
+  }
+  .menu_entry{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #feature{
+    height: 15rem;
+  }
+
+  #feature .container{
+    align-items: flex-start;
+  }
+
+  .feature_block {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+  .feature_block h1{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .feature_block h2{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+  #item2, #item3{
+    display: none;
+  }
+  #item1 {
+    width: 90%;
+  }
+  .menu_sum {
+    display: block;
+    padding: 0.75rem 0rem;
+  }
+  .menu_entry{
+    display: none;
+  }
+  #contact .container {
+    flex-direction: column;
+  }
+  .contact_info{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  footer .container {
+    justify-content: center;
+  }
+
+}
